@@ -1,0 +1,19 @@
+[
+    {
+        "agsSource": {
+            "url": "http://dev.services2.coastalresilience.org:6080/arcgis/rest/services",
+            "folderTitle": "Coastal_Resilience",
+            "folders": [
+                {
+                    "name": "Maine",
+                    "services": [
+                        { "name": "MNRCP_Layers", "type":"dynamic" },
+						{ "name": "Statewide_Priority_Areas", "type":"dynamic" },
+						{ "name": "Habitat_Types", "type":"dynamic" },
+						{ "name": "Fish_Passage_Priorities", "type":"dynamic" }						
+                    ]
+                }
+            ]
+        }
+    }
+]
