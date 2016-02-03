@@ -1,8 +1,3 @@
 {
-  "plugins": [
-	{
-      "repo": "BarrierPrioritization",
-      "name": "BarrierPrioritization"
-    }
-  ]
+  "plugins": [ ]
 }
