@@ -1,8 +1,9 @@
 {
   "plugins": [
 	{
-      "repo": "BarrierPrioritization",
-      "name": "BarrierPrioritization"
+      "repo": "barrier-prioritization",
+      "name": "barrier-prioritization",
+      "org": "FreshwaterNetwork"
     }
   ]
 }
