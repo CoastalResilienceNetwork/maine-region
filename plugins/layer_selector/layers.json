@@ -24,7 +24,13 @@
                 {
                     "name": "easterndiv",
                     "services": [
-                        { "name": "PenobscotBarriers", "type":"dynamic" }					
+                        { "name": "PenobscotBarriers", "type":"dynamic", "displayName":"Penobscot Habitat Blueprint","showLayers": [
+                                {"id":1},
+                                {"id":2},
+                                {"id":3},
+                                {"id":4}
+                            ]
+						}					
                     ]
                 }
             ]
