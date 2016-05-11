@@ -15,5 +15,19 @@
                 }
             ]
         }
+    },
+    {
+        "agsSource": {
+            "url": "https://cumulus-arcgis-server-612380557.us-west-1.elb.amazonaws.com/arcgis/rest/services",
+            "folderTitle": "Penobscot",
+            "folders": [
+                {
+                    "name": "easterndiv",
+                    "services": [
+                        { "name": "PenobscotBarriers", "type":"dynamic" }					
+                    ]
+                }
+            ]
+        }
     }
 ]
