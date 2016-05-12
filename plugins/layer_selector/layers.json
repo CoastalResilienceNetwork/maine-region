@@ -18,7 +18,7 @@
     },
     {
         "agsSource": {
-            "url": "https://cumulus-arcgis-server-612380557.us-west-1.elb.amazonaws.com/arcgis/rest/services",
+            "url": "http://cumulus-web-adapter-1827610810.us-west-1.elb.amazonaws.com/arcgis/rest/services",
             "folderTitle": "Penobscot Habitat Blueprint",
             "folders": [
                 {
