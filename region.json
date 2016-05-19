@@ -89,8 +89,8 @@
         {
             "id": "get-started",
             "title": "Getting Started",
-            "description": "The Maine Water Resources map is a decision support tool that provides planners with information about freshwater and coastal resources to help guide conservations decisions.  The Aquatic Barrier Prioritization App can be used to help prioritize barriers to aquatic connectivity in the Penobscot River Basin based on their potential ecological benefit if removed or mitigated.",
-            "showSubRegions": false,
+            "description": "Coastal Resilience is a decision support tool that provides local, state and national planners a step-wise process to guide decisions to reduce the ecological and socio-economic risks of coastal hazards",
+            "showSubRegions": true,
             "subRegionDescription": "Choose a specific region and it will take you there, or you can freely explore the map.",
             "showByDefault": false,
             "categories": [
@@ -115,6 +115,8 @@
                       "faSize": 32
                     }
                   ]
+              }
+            ]
         }
     ]
 }
