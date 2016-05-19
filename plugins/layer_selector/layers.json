@@ -15,5 +15,25 @@
                 }
             ]
         }
+    },
+    {
+        "agsSource": {
+            "url": "http://cumulus-web-adapter-1827610810.us-west-1.elb.amazonaws.com/arcgis/rest/services",
+            "folderTitle": "Penobscot Habitat Blueprint",
+            "folders": [
+                {
+                    "name": "easterndiv",
+                    "services": [
+                        { "name": "PenobscotBarriers", "type":"dynamic", "displayName":"Penobscot Habitat Blueprint","showLayers": [
+                                {"id":1},
+                                {"id":2},
+                                {"id":3},
+                                {"id":4}
+                            ]
+						}					
+                    ]
+                }
+            ]
+        }
     }
 ]
