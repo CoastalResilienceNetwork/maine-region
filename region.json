@@ -99,7 +99,12 @@
                 "description": "Click ",
                 "issues": [
                     {
-
+                      "name": "Shortcuts Coming Soon..." ,
+                      "description": "Shortcut to Penobscot RIver Basin Aquatic Barrier Prioritization coming soon...",
+                      "saveCode": "",
+                      "saveCode": "",
+                      "faIcon": "fa fa-anchor",
+                      "faSize": 32
                     }
                   ]
               }
