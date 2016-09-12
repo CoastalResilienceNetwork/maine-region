@@ -1,0 +1,122 @@
+[
+    {
+        "displayName": "Coastal Resilience (Maine)",
+        "server": {
+            "type": "ags",
+            "layerType": "dynamic",
+            "url": "http://dev.services2.coastalresilience.org/arcgis/rest/services/Maine/",
+            "name": "Maine"
+        },
+        "includeLayers": [
+			{
+				"name" : "MNRCP Layers",
+				"includeLayers" : [
+					{
+						"name" : "ILF Impacts and Past Awards",
+						"includeAllLayers" : true
+					},
+					{
+						"name" : "2015 Proposals"
+					},
+					{
+						"name" : "MNRCP Regions"
+					}
+				]
+			},
+			{
+				"name" : "Statewide Priority Layers",
+				"includeLayers" : [
+					{
+						"name" : "MNAP-MGS Marsh Migration Study",
+						"includeAllLayers" : true
+					},
+					{
+						"name" : "Drinking Water Protection Areas",
+						"displayName" : "Protected Drinking Water Areas",
+						"includeAllLayers" : true
+					},
+					{
+						"name" : "Beginning wth Habitat Focus Areas",
+						"displayName" : "Habitat Focus Areas"
+					},
+					{
+						"name" : "Protected Lands (Federal, State, Private)"
+					}
+				]
+			},
+			{
+				"name" : "Habitat Types",
+				"includeLayers" : [
+					{
+						"name" : "MDIFW Sensitive Habitats",
+						"includeAllLayers" : true
+					},
+					{
+						"name" : "NWI Wetland Types"
+					}
+				]
+			},
+			{
+				"name" : "Fish Passage Priorities",
+				"includeLayers" : [
+					{
+						"name" :  "Dams and Barriers",
+						"includeAllLayers" : true
+					},
+					{
+						"name" :  "Important Fish Habitats",
+						"includeLayers" :[
+							{
+								"name" : "Atlantic Salmon",
+								"includeAllLayers" : true
+							},
+							{
+								"name" : "Rainbow Smelt",
+								"includeAllLayers" : true
+							},
+							{
+								"name" : "Alewife",
+								"includeAllLayers" : true
+							},
+							{
+								"name" : "SeaRunBrookTrout",
+								"displayName" : "Sea Run Brook Trout"
+							},
+							{
+								"name" : "Wild_Eastern_Brook_Trout_Habitat",
+								"displayName" : "WildEastern Brook Trout Habitat"
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	{
+        "displayName": "Penobscot Habitat Blueprint",
+        "server": {
+            "type": "ags",
+            "layerType": "dynamic",
+            "url": "http://cumulus-web-adapter-1827610810.us-west-1.elb.amazonaws.com/arcgis/rest/services/easterndiv/",
+            "name": "PenobscotBarriers"
+        },
+        "includeLayers": [
+			{
+				"name" : "Penobscot Barriers"
+			},
+			{
+				"name" : "Rivers"
+			},
+			{
+				"name" : "Subwatersheds (HUC12)"
+			},
+			{
+				"name" : "WatershedS (HUC10)",
+				"displayName" : "Watersheds (HUC10)"
+			},
+			{
+				"name" : "Salmon Critical Habitat"
+			}
+		]
+	}
+]
