@@ -7,7 +7,7 @@
     	},
 	{
 		"repo": "map-tree",
-		"name": "layer_selector"
+		"name": "layer_selector",
 		"org": "CoastalResilience"
 	}   
   ]
