@@ -4,7 +4,7 @@
 	"gpURL":"http://cumulus-web-adapter-1827610810.us-west-1.elb.amazonaws.com/arcgis/rest/services/easterndiv/Penobscot_Prioritize/GPServer/Prioritize",
 	"visibleLayers": [0],
 	"includePassabilityOption" : false,
-	"uniqueID" : "UNIQUE_ID",
+	"uniqueID" : "SiteID",
 	"tableResults" : true,
 	"resultsParamName" : "Result",
 	"summStatsParamName" : "Summary_Stats",
