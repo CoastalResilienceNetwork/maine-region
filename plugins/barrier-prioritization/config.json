@@ -9,7 +9,8 @@
 	"resultsParamName" : "Result",
 	"summStatsParamName" : "Summary_Stats",
 	"gpServIncludesLogTransform" : true,
-
+	"includeExploreConsensus":false,
+	"includeSeverityFilter":false,
 	"metricNames":{
 		"batFuncUS" : "US functional network length (m)",
 		"batCountDS" : "​Count of DS barriers ",
