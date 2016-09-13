@@ -78,21 +78,20 @@ The unique ContentPane id makes all the element ids unique and prevents duplicat
 
 			<div id='topRadioDiv' class='topRadioDiv'>
 				<div class='toggleLayerDiv'><input type='checkbox' id='toggleLayer' class='toggleLayer'  title='Check this box to turn off the barrier point layer' checked='checked'>Display Barriers? </div>
-
-				<form id='stateRadioForm' class='stateRadioForm'>
-					<label style='display:inline-block' >
-						<input type='radio' name='stateRadio'  value='inputs' checked='checked'/>Inputs
-					</label>
-					<label style='display:none;' id='tableResultsRadio'>
-						<input type='radio' name='stateRadio'  value='results' />Results
-					</label>
-					<label style='display:none;' id='mapServiceResultsRadio'>
-						<input type='radio' name='stateRadio'  value='mapServiceResults' />Results
-					</label>
-					<label style='display:inline-block;'>
-						<input type='radio' name='stateRadio'  value='stats' />Stats
-					</label>
-				</form>
+					<form id='stateRadioForm' class='stateRadioForm'>
+						<label style='display:inline-block' >
+							<input type='radio' name='stateRadio'  value='inputs' checked='checked'/>Inputs
+						</label>
+						<label style='display:none;' id='tableResultsRadio'>
+							<input type='radio' name='stateRadio'  value='results' />Results
+						</label>
+						<label style='display:none;' id='mapServiceResultsRadio'>
+							<input type='radio' name='stateRadio'  value='mapServiceResults' />Results
+						</label>
+						<label style='display:inline-block;'>
+							<input type='radio' name='stateRadio'  value='stats' />Stats
+						</label>
+					</form>
 
 				<div id='toggleResultsDiv' class='toggleResultsDiv'>
 					<input type='checkbox' id='toggleResults' class='toggleResults'  title='Check this box to turn off the prioritized result'>Display Result? 
@@ -210,36 +209,36 @@ The unique ContentPane id makes all the element ids unique and prevents duplicat
 				<!-- Sum stats DIV hidden until app build out to accept result -->
 				<div><input type='checkbox'  id='runSumStats' class='formInputs' title='Check this box to optionally run summary statistics by state or watershed'>Calculate Summary Statistics?</div>
 				
-				   <div style='padding-bottom: 2px; padding-top: 2px'>
-					   <select id='summarizeBy' class='chosen-select' style='display: none; width:170px' data-placeholder='Summarize by...' title='Enter the unit to summarize by.'>
-						   <option value=''></option>
-						   <option value='Town'>Town</option>
-						   <option value='County'>County</option>
-						   <option value='HUC8'>HUC8</option>
-						   <option value='HUC8_Name'>HUC8 Name</option>
-						   <option value='HUC10'>HUC10</option>
-						   <option value='HUC10_Name'>HUC10 Name</option>
-						   <option value='HUC12'>HUC12</option>
-						   <option value='HUC12_Name'>HUC12 Name</option>
-						   <option value='Type'>Barrier Type</option>
-						   <option value='NESZCL'>River Size Class</option>
-						   <option value='onConsLand'>On Conserved Land</option>
-					   </select>
-				   </div> 
-				   <div style='padding-bottom: 2px; padding-top: 2px'>
-					   <select id='summaryStatField' class='chosen-select' style='display: none; width:170px' data-placeholder='Value to Summarize...' title='Enter the value to summarize.'>
-						   <option value=''></option>
-						   <option value='Tier'>Result: Tier</option>
-						   <option value='FinalRank'>Result: Final Rank</option>
-						   <option value='batFuncUS'>US Func. Network Length</option>
-						   <option value='batCountDS'># Downstream Barriers</option>
-						   <option value='batAbs'>Absolute Gain</option>
-						   <option value='DSNatBar'>DS Natural Barriers</option>
-						   <option value='alewifeAcres'>US Alewife Pond Acres</option>
-						   <option value='US_SalmHabUnits'>US Functional Network Salmon Hab Units</option>
-						   <option value='US_SalmParrProd'>US Functional Network Salmon Parr Prod</option>
-					   </select>
-				   </div> 
+			   <div style='padding-bottom: 2px; padding-top: 2px'>
+				   <select id='summarizeBy' class='chosen-select' style='display: none; width:170px' data-placeholder='Summarize by...' title='Enter the unit to summarize by.'>
+					   <option value=''></option>
+					   <option value='Town'>Town</option>
+					   <option value='County'>County</option>
+					   <option value='HUC8'>HUC8</option>
+					   <option value='HUC8_Name'>HUC8 Name</option>
+					   <option value='HUC10'>HUC10</option>
+					   <option value='HUC10_Name'>HUC10 Name</option>
+					   <option value='HUC12'>HUC12</option>
+					   <option value='HUC12_Name'>HUC12 Name</option>
+					   <option value='Type'>Barrier Type</option>
+					   <option value='NESZCL'>River Size Class</option>
+					   <option value='onConsLand'>On Conserved Land</option>
+				   </select>
+			   </div> 
+			   <div style='padding-bottom: 2px; padding-top: 2px'>
+				   <select id='summaryStatField' class='chosen-select' style='display: none; width:170px' data-placeholder='Value to Summarize...' title='Enter the value to summarize.'>
+					   <option value=''></option>
+					   <option value='Tier'>Result: Tier</option>
+					   <option value='FinalRank'>Result: Final Rank</option>
+					   <option value='batFuncUS'>US Func. Network Length</option>
+					   <option value='batCountDS'># Downstream Barriers</option>
+					   <option value='batAbs'>Absolute Gain</option>
+					   <option value='DSNatBar'>DS Natural Barriers</option>
+					   <option value='alewifeAcres'>US Alewife Pond Acres</option>
+					   <option value='US_SalmHabUnits'>US Functional Network Salmon Hab Units</option>
+					   <option value='US_SalmParrProd'>US Functional Network Salmon Parr Prod</option>
+				   </select>
+			   </div> 
 				<button type='button' id='submitButton' class='submitButton' title='Click to begin an analysis when weights are applied'>Submit</button>
 				<br><br>
 				<div id='gpStatusReportHead' style='display: none;'>Analysis status:</div>
@@ -323,10 +322,13 @@ The unique ContentPane id makes all the element ids unique and prevents duplicat
 					</div>
 			    </div>    
 			</div>
-
 		</div>
 	</div>
-</div>	
+</div>
+
+
+
+
 <div id='bottomDiv' class='bottomDiv'>
 	<div id='help' class='help bottomLinks'  style='display: block;'>Help</div>
 
@@ -336,6 +338,5 @@ The unique ContentPane id makes all the element ids unique and prevents duplicat
 	<div id='dlInputs' class='dlCSV bottomLinks' href='#' style='display: none;'>
         Download Inputs
     </div>
-
 
 </div>	
