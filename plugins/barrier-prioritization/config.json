@@ -5,6 +5,7 @@
 	"visibleLayers": [0],
 	"includePassabilityOption" : false,
 	"uniqueID" : "SiteID",
+	"barrierNameField" :"Name",
 	"tableResults" : true,
 	"resultsParamName" : "Result",
 	"summStatsParamName" : "Summary_Stats",

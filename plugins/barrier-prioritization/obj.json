@@ -8,6 +8,12 @@
 	"startingUseFilter" : false,
 	"startingSummarizeBy" : "",
 	"startingSummaryStatField" : "",
+	"startingConsensusTierFilterMin":1,
+	"startingConsensusTierFilterMax":20,
+	"startingConsensusSeverityFilterMin":1,
+	"startingConsensusSeverityFilterMax":5,
+	"startingUseConsensusCustomFilter":false,
+	"startingConsensusCustomFilter":"",
 	"startingWeights" : {
 		"batFuncUS" : 0,
 		"batCountDS" : 0,
