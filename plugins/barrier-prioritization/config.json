@@ -17,6 +17,7 @@
 	"gpServIncludesLogTransform" : true,
 	"includeExploreConsensus":false,
 	"includeSeverityFilter":false,
+	"analyticsEventTrackingCategory":"ME Aquatic Barrier Prioritization",
 	"metricNames":{
 		"batFuncUS" : "US functional network length (m)",
 		"batCountDS" : "​Count of DS barriers ",
