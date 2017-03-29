@@ -4,7 +4,6 @@
     "titleMain": { "text": "Water Resources", "url": "" },
     "titleDetail": { "text": "Maine", "url": "" },
     "headerLinks": [
-        { "text": "TOUR", "url": "javascript:;", "elementId": "help-overlay-start"},
         { "text": "The Nature Conservancy", "url": "http://nature.org/marine/" },
         { "text": "Legal Disclosure", "url": "http://coastalresilience.org/terms-of-use/" }
     ],
