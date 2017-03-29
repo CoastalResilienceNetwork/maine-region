@@ -3,26 +3,23 @@
     "googleUrlShortenerApiKey": "AIzaSyDO_xBd3griGKuhlYBvv7jVN4Mt58Gl4iw",
     "titleMain": { "text": "Water Resources", "url": "" },
     "titleDetail": { "text": "Maine", "url": "" },
-	"headerLinks": [
-        { "text": "GET STARTED", "launchpadId": "get-started", "url": "" },
-		{ "text": "TOUR", "url": "javascript:;", "elementId": "help-overlay-start"},
-        { "text": "GO TO", "url": "#", "items": [
-                { "text": "Connecticut", "url": "http://maps.coastalresilience.org/connecticut" },
-                { "text": "Global", "url": "http://maps.coastalresilience.org/global/" },
-                { "text": "Gulf of Mexico", "url": "http://maps.coastalresilience.org/gulfmex/" },
-                { "text": "Grenada, St. Vincent & the Grenadines", "url": "http://maps.coastalresilience.org/gsvg/" },
-                { "text": "MesoAmerican Reef", "url": "http://maps.coastalresilience.org/mar/" },
-                { "text": "New York", "url": "http://maps.coastalresilience.org/newyork" },
-                { "text": "New Jersey", "url": "http://maps.coastalresilience.org/newjersey" },
-                { "text": "Southeast Florida", "url": "http://maps.coastalresilience.org/seflorida/" },
-                { "text": "United States", "url": "http://maps.coastalresilience.org/unitedstates/" },
-                { "text": "U.S. Virgin Islands", "url": "http://maps.coastalresilience.org/usvi/" },
-                { "text": "Washington", "url": "http://maps.coastalresilience.org/pugetsound" }
-            ]
-        },
+    "headerLinks": [
+        { "text": "TOUR", "url": "javascript:;", "elementId": "help-overlay-start"},
         { "text": "The Nature Conservancy", "url": "http://nature.org/marine/" },
-        { "text": "Partners", "url": "partners.html", "popup": true },
-        { "text": "Legal Disclosure", "url": "http://www.nature.org/about-us/governance/terms-of-use.xml" }
+        { "text": "Legal Disclosure", "url": "http://coastalresilience.org/terms-of-use/" }
+    ],
+    "regionLinks": [
+            { "text": "California", "url": "http://maps.coastalresilience.org/california" },
+            { "text": "Connecticut", "url": "http://maps.coastalresilience.org/connecticut" },
+            { "text": "Global", "url": "http://maps.coastalresilience.org/global/" },
+            { "text": "Gulf of Mexico", "url": "http://maps.coastalresilience.org/gulfmex/" },
+            { "text": "Grenada, St. Vincent & the Grenadines", "url": "http://maps.coastalresilience.org/gsvg/" },
+            { "text": "MesoAmerican Reef", "url": "http://maps.coastalresilience.org/mar/" },
+            { "text": "New Jersey", "url": "http://maps.coastalresilience.org/newjersey" },
+            { "text": "Southeast Florida", "url": "http://maps.coastalresilience.org/seflorida/" },
+            { "text": "United States", "url": "http://maps.coastalresilience.org/unitedstates/" },
+            { "text": "U.S. Virgin Islands", "url": "http://maps.coastalresilience.org/usvi/" },
+            { "text": "Washington", "url": "http://maps.coastalresilience.org/pugetsound" }
     ],
     "initialExtent": [
         -72,
@@ -45,72 +42,49 @@
         "zoom_to",
         "measure",
         "legend_display",
-        "full_extent",
-        "subregion_toggle"
+        "full_extent"
     ],
     "print": {
         "printServerUrl": "http://services.coastalresilience.org:6080/arcgis/rest/services/Utilities/PrintingTools/GPServer/Export%20Web%20Map%20Task", "customPrintTemplatePrefix": "Letter ANSI A GeositeFramework"  
     },
     "colors": {
-       "primary": "#45812B",
-       "secondary": "#26648E"
+    "primary": "#2F6384",
+    "secondary": "#5E94B6",
+    "tertiary": "#333333",
+    "active": "#0096D6"
     },
     "identifyEnabled": true,
 	"identifyBlacklist": ["OBJECTID", "OBJECTID_1", "SHAPE", "Shape", "shape_Length", "shape_Area", "NumScen"],
-    "subregions": {
-        "hideAtZoomLevel": 8,
-        "color": "#00C5CD",
-        "outlineColor": "#008000",
-        "opacity": 0.2,
-        "clickToFocus": true,
-        "hideByDefault": false,
-        "areas": [
-            {
-                "id": "Ventura",
-                "display": "Ventura",
-                "details": "Ventura, CA",
-                "shape": [[-119.52276396600227, 34.387321441606375], [-119.4867901956278, 34.39238979023838], [-119.26656052672348, 34.26921460290802], [-118.90506800359715, 34.071031797619405], [-118.89980354904543, 33.994683833542574], [-118.92875804728317, 33.98740901687506], [-119.32797915926733, 34.08411311971952], [-119.52276396600227, 34.387321441606375]],
-                "availablePlugins": ["layer_selector", "community_planning","floodSLR", "economic", "future_habitat"],
-                "outlineColor": "#000",
-                "noFill": true
-            },
-            {
-                "id": "Monterey",
-                "display": "Monterey",
-                "details": "Monterey, CA",
-                "shape": [[-122.316832426822, 37.12771684650833], [-122.08521258993395, 37.0049464111225], [-121.6916149603745, 36.98444447851047], [-121.63599790395533, 36.592714047270626], [-121.90695279411031, 36.588133956161634], [-122.35901963560761, 37.11305945551137], [-122.316832426822, 37.12771684650833]],
-                "availablePlugins": ["layer_selector", "community_planning", "floodSLR"],
-                "outlineColor": "#000",
-                "noFill": true
-            }
-        ]
-    },
-     "launchpads": [
-        {
-            "id": "get-started",
-            "title": "Getting Started",
-            "description": "The Maine Water Resources map is a decision support tool that provides planners with information about freshwater and coastal resources to help guide conservations decisions.  The Aquatic Barrier Prioritization App can be used to help prioritize barriers to aquatic connectivity in the Penobscot River Basin based on their potential ecological benefit if removed or mitigated.",
-            "showSubRegions": false,
-            "subRegionDescription": "Choose a specific region and it will take you there, or you can freely explore the map.",
-            "showByDefault": false,
-            "categories": [
-              {
-                "name": "One-click Interactive Map",
-                "description": "Shortcuts Coming Soon... ",
-                "issues": [
-                    {
-                      "name": "Shortcuts Coming Soon..." ,
-                      "description": "Shortcut to Penobscot River Basin Aquatic Barrier Prioritization coming soon...",
-                      "saveCode": "",
-                      "saveCode": "",
-                      "faIcon": "fa fa-anchor",
-                      "faSize": 32
-                    }
-                  ]
-              }
+    "launchpad": {
+            "title": "",
+            "description": "<p>Coastal Resilience is a decision-support tool that incorporates the best available science and local data to enable communities to visualize the risks imposed by sea-level rise and storm surge on the people, economy, and coastal habitats of the Eastern Shore and identify nature-based solutions for enhancing resilience and reducing risks where possible. Partners in this effort include <a href='http://www.a-npdc.org/' target='_blank'>Accomack-Northampton Planning District Commission 
+                </a>, <a href='http://www.vcrlter.virginia.edu/home2/' target='_blank'> University of Virginia’s Long-Term Ecological Research Project</a>, 
+                <a href='http://ccrm.vims.edu/' target='_blank'>Virginia Institute of Marine Science’s Center for Coastal Resource Management</a>, <a href='http://www.unc.edu/' target='_blank'>University of North Carolina at Chapel Hill</a>, <a href='http://www.rmc.edu/' target='_blank'>Randolph-Macon College</a>, <a href='https://duke.edu/' target='_blank'>Duke University</a>, <a href='http://uncw.edu/' target='_blank'>University of North Carolina-Wilmington</a>, <a href='http://www.naturalcapitalproject.org/' target='_blank'>Natural Capital Project</a>,
+                <a href='http://www.deborahbrosnan.com/' target='_blank'>The Brosnan Center for Risk Reduction</a>, <a href='https://www.nasa.gov/centers/wallops/home' target='_blank'>NASA-Wallops Flight Facility</a>, <a href='https://www.fws.gov/refuge/chincoteague/' target='_blank'>U.S. Fish and Wildlife Service Chincoteague National Wildlife Refuge</a>, 
+                <a href='https://www.arcadis.com//en/united-states/cookie-wall/' target='_blank'>ARCADIS US, Inc.</a>, and <a href='http://www.warrenpinnacle.com/' target='_blank'>Warren-Pinnacle Consulting, Inc.</a>.</p>",
+            "plugins": [
+                {
+                    "title": "Source Protection Explorer",
+                    "description": "Investing in watershed health is a sustainable way to enhance water security. The Water Security Explorer enables users to explore cities that can meet specified pollution reduction targets using conservation actions and the area and cost required to reach these targets.",
+                    "pluginName": "water_security"
+                },
+                {
+                    "title": "Benefits Explorer",
+                    "description": "Investing in watersheds produces a range of benefits that address other social, economic and ecological challenges in addition to water security. The Benefits Explorer app allows users to see where investments may achieve the most co-benefits for people and nature.",
+                    "pluginName": "benefits_explorer"
+                },
+                {
+                    "title": "Water Funds Explorer",
+                    "description": "Water Funds are a way to protect source water and share the benefits of healthy watersheds across communities. The Water Funds Explorer app allows users to view where water funds have been established, learn about their key attributes, and query across funds to see what approaches and attributes various funds have in common.",
+                    "pluginName": "water_funds_prototype"
+                },
+                {
+                    "title": "Water Scarcity Explorer",
+                    "description": "Innovative investments can help address water depletion. The Water Share app enables users to look at how, where and when water has been used and explore potential strategies to alleviate scarcity within a given basin.",
+                    "pluginName": "water_share"
+                }
             ]
-        }
-    ]
+      }
 }
 
 
