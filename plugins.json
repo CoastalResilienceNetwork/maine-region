@@ -1,6 +1,10 @@
 {
   "plugins": [
 	{
+		"repo": "future_habitat_v2",
+		"name": "future-habitat-v2"
+    },
+	{
 		"repo": "barrier-prioritization",
 		"name": "barrier-prioritization",
 		"org": "FreshwaterNetwork"
