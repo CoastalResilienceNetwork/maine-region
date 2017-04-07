@@ -1,0 +1,14 @@
+<!--Style these elements with class rather than id because ids are prepended with this.appDiv.id before elements are created.-->
+<!--Closer link on legend window. The decimal reference displays the heavy X-->
+<a class='myLegendCloser' href='#'>
+	&#10006;
+</a>
+<!--Header bar of legend window-->
+<div id='myLegendHeader' class='myLegendHeader'>
+	Selected Species Legend
+</div>	
+<!--Placeholder for dynamic legend. Inner HTML is reset with each legend build by .html(''). 
+Don't use .empty() because it will have trouble calculating height and width after the first build-->
+<div id='mySpeciesLegend' class='mySpeciesLegend'>
+</div> 
+ 	

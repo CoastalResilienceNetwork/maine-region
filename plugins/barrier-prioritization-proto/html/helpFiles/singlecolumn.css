@@ -1,0 +1,256 @@
+@font-face {
+  font-family: 'Fjalla One', sans-serif; }
+
+@font-face {
+  font-family: 'Bitter', serif; }
+
+@font-face {
+  font-family: 'Lato', sans-serif; }
+
+@font-face {
+  font-family: 'fontello';
+  src: url('font/fontello.eot?25429344');
+  src: url('font/fontello.eot?25429344#iefix') format('embedded-opentype'), url('font/fontello.woff?25429344') format('woff'), url('font/fontello.ttf?25429344') format('truetype'), url('font/fontello.svg?25429344#fontello') format('svg');
+  font-weight: normal;
+  font-style: normal; }
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased; }
+
+html, body, #page {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  min-width: 1040px; }
+
+#main {
+  margin: auto; }
+
+.tint:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(51, 74, 81, 0.4); }
+
+#single-column-wrap {
+  width: 990px;
+  margin: auto;
+  zoom: 1;
+  padding-top: 120px; }
+  #single-column-wrap:before, #single-column-wrap:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden; }
+  #single-column-wrap:after {
+    clear: both; }
+  #single-column-wrap #sidebar {
+    position: relative;
+    float: left;
+    width: 299px; }
+    #single-column-wrap #sidebar a {
+      text-decoration: none;
+      color: #9faeb3;
+      font-family: 'Lato';
+      font-size: 0.8125em;
+      font-weight: 600; }
+    #single-column-wrap #sidebar a:hover {
+      color: #8dc557; }
+    #single-column-wrap #sidebar p {
+      margin: 8px 0; }
+  #single-column-wrap .sidebar-current-active p {
+    color: #8dc557; }
+  #single-column-wrap #main-content {
+    float: right;
+    width: 691px;
+    margin: 0 0 50px 0; }
+    #single-column-wrap #main-content .section-heading {
+      font-family: 'Bitter';
+      font-size: 2.3em;
+      color: #223138;
+      text-align: left;
+      font-weight: 100;
+      margin: 0 0 45px 0; }
+    #single-column-wrap #main-content .section-content {
+      font-family: 'Lato';
+      font-size: 0.9375em;
+      line-height: 1.6em;
+      color: #405D68;
+      margin: 0 0 125px 0; }
+    #single-column-wrap #main-content #Members .section-content {
+      margin: 0; }
+      #single-column-wrap #main-content .section-content div {
+        width: 100% !important; }
+      #single-column-wrap #main-content .section-content p, #single-column-wrap #main-content .section-content span, #single-column-wrap #main-content .section-content ul, #single-column-wrap #main-content .section-content li {
+        color: #405D68 !important; }
+      #single-column-wrap #main-content .section-content .wp-caption-text {
+        font-size: 1em;
+        line-height: 1.3em;
+        color: #9faeb3 !important;
+        margin: 17px 0 0 0; }
+    #single-column-wrap #main-content img {
+      max-width: 100%;
+      height: auto; }
+    #single-column-wrap #main-content a {
+      color: #8dc557;
+      text-decoration: none; }
+
+/* new styles for network templates */
+/* ------- Fluid Columns ------- */
+#single-column-wrap #main-content .section-content .coastal-column {
+	float: left;
+	margin-right: 4%;
+	position: relative;
+}
+
+#single-column-wrap #main-content .section-content .one_half_column {
+	width: 40% !important;
+}
+
+#single-column-wrap #main-content .section-content .one_third_column {
+	width: 27% !important;
+}
+
+#single-column-wrap #main-content .section-content .one_fourth_column {
+	width: 22% !important;
+}
+
+#single-column-wrap #main-content .section-content .one_half_column > p {
+	margin: 0 !important;
+}
+
+.clearboth {
+	clear: both;
+	display: block;
+	font-size: 0;
+	height: 0;
+	line-height: 0;
+	width: 100%;
+}
+
+.content-section:before {
+    clear: both;
+    content: '';
+    display: block;
+}
+
+/* Toolkit template */
+.resource-stories-wrap .resource-stories-inner .story-wrap {
+	width: 27%;
+}
+
+.resource-stories-wrap .resource-stories-inner .story-wrap .story-tumb {
+	height: 140px;
+}
+
+.resource-stories-wrap .resource-stories-inner .story-wrap h4 {
+	font-size: 1em;
+}
+
+#single-column-wrap #main-content .section-content p {
+	font-size: 1.4em;
+}
+
+.resource-stories-wrap .resource-stories-inner .story-wrap p {
+    height: 100px;
+	overflow: hidden;
+}
+
+.single-project-bottom-links {
+    zoom: 1;
+    margin: 0 0 90px 0;
+    width: 100%;
+}
+
+#coastal-calendar-wrapper #tribe-events-pg-template #tribe-events .single-project-bottom-links {
+    zoom: 1;
+    margin: 0 0 90px 0;
+    width: 100%;
+}
+
+.single-project-bottom-links:before,
+.single-project-bottom-links:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+    clear: both;
+}
+
+.single-project-bottom-links:after {
+    clear: both;
+}
+
+.single-project-bottom-links a {
+    text-decoration: none;
+}
+
+.single-project-bottom-links .link-one.not-active,
+.single-project-bottom-links .link-two.not-active,
+.single-project-bottom-links .link-one.not-active:before,
+.single-project-bottom-links .link-two.not-active:after {
+    color: #405d68 !important;
+}
+
+.single-project-bottom-links .link-one:hover,
+.single-project-bottom-links .link-two:hover,
+.single-project-bottom-links .link-one:hover:before,
+.single-project-bottom-links .link-two:hover:after {
+    color: #405d68 !important;
+}
+
+.single-project-bottom-links .link-one,
+.single-project-bottom-links .link-two {
+    color: #8dc557;
+    font-family: 'Lato';
+    font-size: 0.8125em;
+    font-weight: 600;
+    text-transform: uppercase;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.single-project-bottom-links .link-one {
+    float: left;
+}
+
+.single-project-bottom-links .link-one:before {
+    font-family: 'fontello';
+    font-size: 1.5em;
+    color: #a6e266;
+    content: '\e8a2';
+    display: inline-block;
+    margin: 0 10px 0 0;
+    position: relative;
+    left: 0;
+    top: 2px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.single-project-bottom-links .link-two {
+    float: right;
+}
+
+.single-project-bottom-links .link-two:after {
+    font-family: 'fontello';
+    font-size: 1.5em;
+    color: #a6e266;
+    content: '\e8a3';
+    display: inline-block;
+    margin: 0 0 0 10px;
+    position: relative;
+    top: 2px;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
