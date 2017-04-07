@@ -39,7 +39,7 @@
     "pluginOrder": [
         "future-habitat-v2",
         "regional-planning",
-		"barrier-prioritization-proto",
+	"barrier-prioritization-proto",
         "zoom_to",
         "measure",
         "legend_display",
