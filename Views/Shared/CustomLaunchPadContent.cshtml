@@ -7,8 +7,8 @@
     right: 0;
     bottom: 0;
     min-height: 455px;
-    background: url(img/getting_started_bkgd.jpg);
-    background-size: cover;
+	background: url(img/getting_started_bkgd.jpg);
+	background-size: cover;
     background-repeat: no-repeat;
 }
 
@@ -21,31 +21,36 @@
 }
 
 .gsc button {
-    width: 281px;
+	width: 281px;
     margin: 5px 26px;
     color: #fff;
-    background: transparent;
+    background-color: rgba(106, 133, 210, 0.21);
     border: 1px solid #fff;
 }
 
-.gsc .partners-button {
+.gsc button:hover {
+    background-color: rgba(106, 133, 210, 0.42);
+}
+
+.gsc button.partners-button {
     bottom: 14px;
     position: absolute;
     left: 10px;
+    background-color: rgba(255, 148, 148, 0.21)
 }
 
-.gsc button:hover {
-    background-color: rgba(255, 255, 255, 0.4);
+.gsc button.partners-button:hover {
+	background-color: rgba(255, 148, 148, 0.42)
 }
 
 </style>
 
 <div class="gsc">
 
-    <div class="gsc-title">Coastal Resilience is a web mapping tool that allows you to examine nature’s role in reducing coastal risks and opportunities for habitat conservation in Maine.</div>
+	<div class="gsc-title">Coastal Resilience is a web mapping tool that allows you to examine nature’s role in reducing coastal risks and opportunities for habitat conservation in Maine.</div>
 
-    <button class="button button-default launch-plugin" data-plugin-name="0">Explore map</button>
-    <button class="button button-default launch-plugin" data-plugin-name="future-habitat-v2">View Future Habitat Explorer</button>
+	<button class="button button-default launch-plugin" data-plugin-name="0">Explore map</button>
+	<button class="button button-default launch-plugin" data-plugin-name="future-habitat-v2">View Future Habitat Explorer</button>
     <button class="button button-default partners-button">View our partners</button>
 
 </div>
