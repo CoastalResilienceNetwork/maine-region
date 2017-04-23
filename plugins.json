@@ -3,15 +3,6 @@
 	{
 		"repo": "future_habitat_v2",
 		"name": "future-habitat-v2"
-    },
-	{
-		"repo": "regional-planning",
-		"name": "regional-planning"
-	},
-	{
-		"repo": "barrier-prioritization-proto",
-		"name": "barrier-prioritization-proto",
-		"org": "FreshwaterNetwork"
-    }
+    }   	
   ]
 }
