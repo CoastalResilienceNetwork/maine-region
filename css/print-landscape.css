@@ -1,0 +1,49 @@
+﻿@media print {
+    @page {
+        size: letter landscape;
+    }
+
+   #map-print-sandbox {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    #print-map-container {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    #print-map-container > #export-print-preview-map {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    #legend-container-0 {
+        display: none !important;
+        top: 80% !important;
+        height: 20% !important;
+    }
+
+    .above-legend {
+        bottom: 21% !important;
+    }
+
+    .page-bottom {
+        bottom: 1% !important;
+    }
+
+
+    #map-print-sandbox {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    #print-map-container {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+    #print-map-container > #export-print-preview-map {
+        width: 100% !important;
+        height: 100% !important;
+    }
