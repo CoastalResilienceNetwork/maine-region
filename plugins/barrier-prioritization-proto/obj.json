@@ -1,0 +1,45 @@
+{
+	"visibleLayers": [0],
+	"accordVisible": "",
+	"accordHidden": "",
+	"accordActive": 0,
+	"buttonText": "",
+	"extent": "",
+	"stateSet": "no",
+	"getStarted" : "open",
+	
+	"startingAdditionalLayers":{	
+		"barrType":"off",
+		"huc12s":"off",
+		"salmonCH":"off",
+		"rivers":"off"
+	},
+	"startingVisibleLayers":[0],
+	"startingMapLayers" : false,
+	"startingFilter" : "",
+	"startingPassability" : "Dams",
+	"startingRemovingBarriers" : false,
+	"startingBarriers2Remove" : "",
+	"startingUseFilter" : false,
+	"startingSummarizeBy" : "",
+	"startingSummaryStatField" : "",
+	"startingZoomState" : "",
+	"startingConsensusTierFilterMin":1,
+	"startingConsensusTierFilterMax":20,
+	"startingConsensusSeverityFilterMin":1,
+	"startingConsensusSeverityFilterMax":5,
+	"startingUseConsensusCustomFilter":false,
+	"startingConsensusCustomFilter":"",
+	"startingRadarMetrics" : [
+		"batFuncUS",
+		"HUC10_CritSalmHab",
+		"alewifeAcres",
+		"batCountDS",
+		"US_SalmHabUnits",
+		"SeaRunBT",
+		"InvasiveBarrierConfirmed",
+		"DMRSalmonPriority",
+		"usSmeltPriority"
+	],
+	"startingWeights" : {}
+}
