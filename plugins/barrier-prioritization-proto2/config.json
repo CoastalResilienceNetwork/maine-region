@@ -9,6 +9,7 @@
 	"visibleLayers": [0],
 	"additionalLayers":{	
 		"Barriers by Type":["barrType", "http://cumulus-web-adapter-1827610810.us-west-1.elb.amazonaws.com/arcgis/rest/services/easterndiv/PenobscotBarriers2/MapServer", "1", "View the barriers by type (dam, crossing, natural barrier)", "off"],
+		"Resident Prioritization":["barrRes", "http://cumulus-web-adapter-1827610810.us-west-1.elb.amazonaws.com/arcgis/rest/services/easterndiv/PenobscotBarriers2/MapServer", "6", "View the barriers prioritized for resident fish (brook trout)", "off"],
 		"Rivers" : ["rivers", "http://cumulus-web-adapter-1827610810.us-west-1.elb.amazonaws.com/arcgis/rest/services/easterndiv/PenobscotBarriers2/MapServer", "2", "Zoom in to the scale of a city or town to view the rivers in the region.", "off"],
 		"Subwatersheds (HUC 12)" :["huc12s", "http://cumulus-web-adapter-1827610810.us-west-1.elb.amazonaws.com/arcgis/rest/services/easterndiv/PenobscotBarriers2/MapServer", "3", "View the USGS 12-digit Hydrologic Units", "off"],
 		"Salmon Critical Habitat" : ["salmonCH", "http://cumulus-web-adapter-1827610810.us-west-1.elb.amazonaws.com/arcgis/rest/services/easterndiv/PenobscotBarriers2/MapServer", "5", "View the Citical Salmon Habitat in the Penobscot Basin.", "off"]
