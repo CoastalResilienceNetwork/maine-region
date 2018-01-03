@@ -6,6 +6,9 @@
 	"includeBarrierSeverity" : false,
 	"includeSurveyPageLink" : false,
 	"includeFERC": false,
+	"includeFactSheets" : false,
+	"residentTierName" : "",
+	"bktTierName" : "",
 	"visibleLayers": [0],
 	"additionalLayers":{	
 		"Barriers by Type":["barrType", "http://cumulus-web-adapter-1827610810.us-west-1.elb.amazonaws.com/arcgis/rest/services/easterndiv/PenobscotBarriers2/MapServer", "1", "View the barriers by type (dam, crossing, natural barrier)", "off"],
