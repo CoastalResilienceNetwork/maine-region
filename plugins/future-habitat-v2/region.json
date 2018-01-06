@@ -3,5 +3,5 @@
 	"parcels": "http://tiles.arcgis.com/tiles/F7DSX1DSNSiWmOqh/arcgis/rest/services/Maine_Parcels_Coastal/VectorTileServer",
 	"lidar": "http://mapserver.maine.gov/wms/mapserv.exe?map=c:/wms/topos.map",
 	"lidarLayers": ["medem2_hill","medem2_overview10_hill","medem2_overview30_hill","medem2_overview100_hill"],
-	"regionLabel": "Choose a County to Explore"
+	"regionLabel": "Choose region to explore"
 }
