@@ -38,7 +38,7 @@
         { "name": "Terrain"            , "url": "http://server.arcgisonline.com/ArcGIS/rest/services/World_Terrain_Base/MapServer" }
     ],
     "pluginOrder": [
-        "future-habitat-v2",
+       
         "regional-planning",
 		"barrier-prioritization-proto2",
         "zoom_to",
