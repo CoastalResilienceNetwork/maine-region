@@ -7,9 +7,13 @@
 	"includeSurveyPageLink" : false,
 	"includeFERC": false,
 	"includeFactSheets" : false,
+	"includeStratifiedRegions" : false,
+	"includeMultipleScenarios" : false,
 	"residentTierName" : "",
 	"bktTierName" : "",
+	"anadTierName" : "",
 	"visibleLayers": [0],
+	"startWithBarriersVisible": true,
 	"additionalLayers":{	
 		"Barriers by Type":["barrType", "http://cumulus-web-adapter-1827610810.us-west-1.elb.amazonaws.com/arcgis/rest/services/easterndiv/PenobscotBarriers2/MapServer", "1", "View the barriers by type (dam, crossing, natural barrier)", "off"],
 		"Resident Prioritization":["barrRes", "http://cumulus-web-adapter-1827610810.us-west-1.elb.amazonaws.com/arcgis/rest/services/easterndiv/PenobscotBarriers2/MapServer", "6", "View the barriers prioritized for resident fish (brook trout)", "off"],
