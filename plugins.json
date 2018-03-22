@@ -9,8 +9,8 @@
 		"name": "regional-planning"
 	},
 	{
-		"repo": "barrier-prioritization-proto2",
-		"name": "barrier-prioritization-proto2",
+		"repo": "barrier-prioritization-v3",
+		"name": "barrier-prioritization-v3",
 		"org": "FreshwaterNetwork"
     }   	
   ]
