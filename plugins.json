@@ -3,6 +3,11 @@
 	{
 		"repo": "future_habitat_v2",
 		"name": "future-habitat-v2"
+    },
+	{
+		"repo": "barrier-prioritization-v3",
+		"name": "barrier-prioritization-v3",
+		"org": "FreshwaterNetwork"
     }   	
   ]
 }
