@@ -39,6 +39,7 @@
     ],
     "pluginOrder": [
         "future-habitat-v2",
+	"barrier-prioritization-v3",
         "zoom_to",
         "measure",
         "legend_display",
@@ -54,7 +55,7 @@
     "active": "#0096D6"
     },
     "identifyEnabled": true,
-	"identifyBlacklist": ["OBJECTID", "OBJECTID_1", "SHAPE", "Shape", "shape_Length", "shape_Area", "NumScen"],
+    "identifyBlacklist": ["OBJECTID", "OBJECTID_1", "SHAPE", "Shape", "shape_Length", "shape_Area", "NumScen"],
     "launchpad": {
 			"html": true,
             "plugins": [
