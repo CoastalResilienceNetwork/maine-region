@@ -1,6 +1,84 @@
 {
-	"service": "http://dev.services.coastalresilience.org/arcgis/rest/services/Maine/Future_Habitat/MapServer",
+	"service": "http://services.coastalresilience.org/arcgis/rest/services/Maine/Future_Habitat/MapServer",
+	"regionLabel": "Choose a region to Explore",
+	"defaultExtent": [-7959275, 5087981, -7338606, 5791202],
+	"globalRegion": "Maine",
+	"regionService": "http://services.coastalresilience.org/arcgis/rest/services/Maine/Future_Habitat/MapServer/9",
 	"parcels": "http://tiles.arcgis.com/tiles/F7DSX1DSNSiWmOqh/arcgis/rest/services/Maine_Parcels_Coastal/VectorTileServer",
+	"parcelsLayer": 1,
+	"road_stream_crossing": 0,
+	"regionLayer": 9,
+	"current_conservation_lands": 6,
+	"wildlife_habitat": 11,
+	"non_tidal_wetlands": 7,
 	"lidar": "http://mapserver.maine.gov/wms/mapserv.exe?map=c:/wms/topos.map",
-	"lidarLayers": ["medem2_hill","medem2_overview10_hill","medem2_overview30_hill","medem2_overview100_hill"]
+	"lidarLayers": ["medem2_hill","medem2_overview10_hill","medem2_overview30_hill","medem2_overview100_hill"],
+	"intro": "Wetland Types for",
+	"scenarios": [
+		{
+			"layer": 2,
+			"label": "Current"
+		},
+		{
+			"layer": 3,
+			"label": "1 ft"
+		},
+		{
+			"layer": 4,
+			"label": "2 ft"
+		},
+		{
+			"layer": 5,
+			"label": "3.3 ft"
+		},
+		{
+			"layer": 6,
+			"label": "6 ft"
+		}
+	],
+	"scenariosAdditive": true,
+	"stats": [
+		{
+			"icon": "grass",
+			"label": "Tidal Marsh Area",
+			"units": "acres",
+			"fields": [
+				"Current_Tidal_Marsh_Acres",
+				"CurrentPlus1Ft_Acres",
+				"CurrentPlus2Ft_Acres",
+				"CurrentPlus3Ft_Acres",
+				"CurrentPlus6Ft_Acres"
+			],
+			"tooltip": ""
+		},
+		{
+			"icon": "bird",
+			"label": "Non-Tidal Wetlands Area",
+			"units": "acres",
+			"fields": [
+				"Non_Tidal_Wetland_Acres",
+				"Non_Tidal_Wetland_Acres",
+				"Non_Tidal_Wetland_Acres",
+				"Non_Tidal_Wetland_Acres",
+				"Non_Tidal_Wetland_Acres"
+			],
+			"tooltip": ""
+		},
+		{
+			"icon": "fish",
+			"label": "Road Crossing Barriers Nearby",
+			"units": "acres",
+			"fields": [
+				"Barrier_Count",
+				"Barrier_Count",
+				"Barrier_Count",
+				"Barrier_Count",
+				"Barrier_Count"
+			],
+			"tooltip": ""
+		}
+	],
+	"regionAttributeLabel": "NAME",
+	"printFooterTitle": "Coastal Resilience - Maine Future Habitat Mapping Tool",
+	"printFooterBody:": "Tidal Marsh Data: Maine Natural Areas Program (MNAP) - SLR Projections: Maine Geological Survey, MNAP - Application Development: The Nature Conservancy"
 }
