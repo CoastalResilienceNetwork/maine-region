@@ -8,17 +8,17 @@
 	"lidar": "http://mapserver.maine.gov/wms/mapserv.exe?map=c:/wms/topos.map",
 	"lidarLayers": ["medem2_hill","medem2_overview10_hill","medem2_overview30_hill","medem2_overview100_hill"],
 	"service": "http://dev.services.coastalresilience.org/arcgis/rest/services/Maine/Coastal_Risk_Explorer/MapServer",
-	"roadStreamCrossing_ServiceIndex": 2,
-	"townsLayer_ServiceIndex": 26,
+	"roadStreamCrossing_ServiceIndex": 0,
+	"townsLayer_ServiceIndex": 20,
 	"townsLayer_NameField": "TOWN",
 	"blockGroupLayer_ServiceIndex":28,
 	"blockGroupLayer_NameField":"NAMELSAD",
 	"visibleLayerGroups":{
-		"default":[0,1,19,20,21,26,27,28],
-		"oneFoot":[0,1,4,5,6,19,20,21,26,27,28],
-		"twoFoot":[0,1,8,9,10,19,20,21,26,27,28],
-		"threeFoot":[0,1,12,13,14,19,20,21,26,27,28],
-		"sixFoot":[0,1,16,17,18,19,20,21,26,27,28]
+		"default":[1,2,19,20,21,26,27,28],
+		"oneFoot":[1,2,4,5,6,19,20,21,22,26,27,28],
+		"twoFoot":[1,2,8,9,10,19,20,21,22,23,26,27,28],
+		"threeFoot":[1,2,12,13,14,19,20,21,22,23,24,26,27,28],
+		"sixFoot":[1,2,16,17,18,19,20,21,22,23,24,25,26,27,28]
 	},
 	"criticalFields":{
 		"common":{
@@ -160,16 +160,16 @@
 								"units":"%"
 							},
 							{
-								"label":"Per Capita Income",
-								"field":"E_PCI",
-								"unitsBeforeValue": true,
-								"units":"$"
-							},
-							{
 								"label":"No High School Diploma",
 								"field":"EP_NOHSDP",
 								"unitsBeforeValue": false,
 								"units":"%"
+							},
+							{
+								"label":"Per Capita Income",
+								"field":"E_PCI",
+								"unitsBeforeValue": true,
+								"units":"$"
 							}
 						]
 					},
