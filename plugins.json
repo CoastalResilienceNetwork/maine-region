@@ -10,7 +10,8 @@
 	},
 	{
 		"repo": "marine-risk-explorer",
-		"name": "marine-risk-explorer"
+		"name": "marine-risk-explorer",
+		 "ver": "4dc2c32"
 	},
 	{
 		"repo": "barrier-prioritization-v3",
