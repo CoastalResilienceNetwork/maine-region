@@ -9,6 +9,10 @@
 		"name": "regional-planning"
 	},
 	{
+		"repo": "marine-risk-explorer",
+		"name": "marine-risk-explorer"
+	},
+	{
 		"repo": "barrier-prioritization-v3",
 		"name": "barrier-prioritization-v3",
 		"org": "FreshwaterNetwork"
