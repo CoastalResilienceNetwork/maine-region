@@ -9,17 +9,20 @@
 	"lidarLayers": ["medem2_hill","medem2_overview10_hill","medem2_overview30_hill","medem2_overview100_hill"],
 	"service": "http://dev.services.coastalresilience.org/arcgis/rest/services/Maine/Coastal_Risk_Explorer/MapServer",
 	"roadStreamCrossing_ServiceIndex": 0,
-	"townsLayer_ServiceIndex": 20,
+	"townsHoverLayer_ServiceIndex": 20,	
+	"townsLayer_ServiceIndex": 26,
 	"townsLayer_NameField": "TOWN",
 	"blockGroupLayer_ServiceIndex":28,
 	"blockGroupLayer_NameField":"NAMELSAD",
-	"visibleLayerGroups":{
-		"default":[1,2,19,20,21,26,27,28],
-		"oneFoot":[1,2,4,5,6,19,20,21,22,26,27,28],
-		"twoFoot":[1,2,8,9,10,19,20,21,22,23,26,27,28],
-		"threeFoot":[1,2,12,13,14,19,20,21,22,23,24,26,27,28],
-		"sixFoot":[1,2,16,17,18,19,20,21,22,23,24,25,26,27,28]
-	},
+	"townTopOptionText":"-Select Town-",
+	"visibleLayerGroupsBottom":[26,27,28],
+	"visibleLayerGroupsTop":{
+		"default":[1,2,19,20],
+		"oneFoot":[1,2,4,5,6,19,20],
+		"twoFoot":[1,2,8,9,10,19,20],
+		"threeFoot":[1,2,12,13,14,19,20],
+		"sixFoot":[1,2,16,17,18,19,20]
+	},	
 	"criticalFields":{
 		"common":{
 			"socialVulnerabilityRank": "RPL_THEMES",
