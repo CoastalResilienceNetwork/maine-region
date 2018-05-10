@@ -5,10 +5,6 @@
 		"name": "future-habitat-v2"
     },
 	{
-		"repo": "regional-planning",
-		"name": "regional-planning"
-	},
-	{
 		"repo": "marine-risk-explorer",
 		"name": "marine-risk-explorer"
 	},
