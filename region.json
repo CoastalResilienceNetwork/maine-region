@@ -39,7 +39,9 @@
     ],
     "pluginOrder": [
         "future-habitat-v2",
-	"barrier-prioritization-v3",
+        "regional-planning",
+        "marine-risk-explorer",
+		"barrier-prioritization-v3",
         "zoom_to",
         "measure",
         "legend_display",
