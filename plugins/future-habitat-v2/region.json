@@ -8,7 +8,7 @@
 	"parcelsLayer": 1,
 	"road_stream_crossing": 0,
 	"regionLayer": 9,
-	"current_conservation_lands": 6,
+	"current_conservation_lands": 8,
 	"wildlife_habitat": 11,
 	"non_tidal_wetlands": 7,
 	"lidar": "http://mapserver.maine.gov/wms/mapserv.exe?map=c:/wms/topos.map",
