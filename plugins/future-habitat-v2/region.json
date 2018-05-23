@@ -67,7 +67,7 @@
 		{
 			"icon": "fish",
 			"label": "Road Crossing Barriers Nearby",
-			"units": "acres",
+			"units": "",
 			"fields": [
 				"Barrier_Count",
 				"Barrier_Count",
