@@ -9,6 +9,7 @@
 	"lidarLayers": ["medem2_hill","medem2_overview10_hill","medem2_overview30_hill","medem2_overview100_hill"],
 	"service": "http://dev.services.coastalresilience.org/arcgis/rest/services/Maine/Coastal_Risk_Explorer/MapServer",
 	"roadStreamCrossing_ServiceIndex": 0,
+    "coastalRisk_ServiceIndex" : 16,
 	"townsHoverLayer_ServiceIndex": 20,	
 	"townsLayer_ServiceIndex": 26,
 	"townsLayer_NameField": "TOWN",
