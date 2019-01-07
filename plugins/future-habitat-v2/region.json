@@ -11,7 +11,7 @@
 	"current_conservation_lands": 8,
 	"wildlife_habitat": 11,
 	"non_tidal_wetlands": 7,
-	"lidar": "https://mapserver.maine.gov/wms/mapserv.exe?map=c:/wms/topos.map",
+	"lidar": "http://mapserver.maine.gov/wms/mapserv.exe?map=c:/wms/topos.map",
 	"lidarLayers": ["medem2_hill","medem2_overview10_hill","medem2_overview30_hill","medem2_overview100_hill"],
 	"intro": "Wetland Types for",
 	"scenarios": [
