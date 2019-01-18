@@ -5,7 +5,7 @@
 	"intro": "Rising sea levels will impact Maine’s coast in many different ways.  One important effect will be the inundation of roads, which will prevent access to homes and businesses as roads are flooded.  Use this tool to explore how rising sea levels will affect roads in coastal cities and towns, see where road networks will be inaccessible to emergency responders, and how that relates to the overall social vulnerability of the community. Social vulnerability is provided for each coastal block group, based upon 17 socioeconomic and demographic factors.",
 	"printFooterTitle": "Coastal Resilience - Maine Coastal Risk Mapping Tool",
 	"printFooterBody:": "Tidal Marsh Data: Maine Natural Areas Program (MNAP) - SLR Projections: Maine Geological Survey, MNAP - Application Development: The Nature Conservancy",
-	"lidar": "http://mapserver.maine.gov/wms/mapserv.exe?map=c:/wms/topos.map",
+        "lidar": "https://gis.maine.gov/arcgis/rest/services/Elevation/Maine_Elevation_DEM_2_Meter_Image_Service/ImageServer",
 	"lidarLayers": ["medem2_hill","medem2_overview10_hill","medem2_overview30_hill","medem2_overview100_hill"],
 	"service": "https://dev-services.coastalresilience.org/arcgis/rest/services/Maine/Coastal_Risk_Explorer_Jan2019/MapServer",
 	"roadStreamCrossing_ServiceIndex": 0,
@@ -20,10 +20,10 @@
 	"visibleLayerGroupsBottom":[26,27,28],
 	"visibleLayerGroupsTop":{
 		"default":[1,2,20,27],
-		"oneFoot":[1,2,4,5,6,20],
-		"twoFoot":[1,2,8,9,10,20],
-		"threeFoot":[1,2,12,13,14,20],
-		"sixFoot":[1,2,16,17,18,20]
+		"oneFoot":[1,2,4,5,6,20,27],
+		"twoFoot":[1,2,8,9,10,20,27],
+		"threeFoot":[1,2,12,13,14,20,27],
+		"sixFoot":[1,2,16,17,18,20,27]
 	},	
 	"criticalFields":{
 		"common":{
