@@ -7,7 +7,7 @@
 	"printFooterBody:": "Tidal Marsh Data: Maine Natural Areas Program (MNAP) - SLR Projections: Maine Geological Survey, MNAP - Application Development: The Nature Conservancy",
         "lidar": "https://gis.maine.gov/arcgis/rest/services/Elevation/Maine_Elevation_DEM_2_Meter_Image_Service/ImageServer",
 	"lidarLayers": ["medem2_hill","medem2_overview10_hill","medem2_overview30_hill","medem2_overview100_hill"],
-	"service": "https://dev-services.coastalresilience.org/arcgis/rest/services/Maine/Coastal_Risk_Explorer/MapServer",
+	"service": "https://services2.coastalresilience.org/arcgis/rest/services/Maine/Coastal_Risk_Explorer/MapServer",
 	"roadStreamCrossing_ServiceIndex": 0,
         "roads_ServiceIndex" : 19,
         "coastalRisk_ServiceIndex" : 16,
