@@ -1,0 +1,302 @@
+{
+	"townLabel": "Choose a Town to Explore",
+	"defaultExtent": [-7885010, 5308125, -7452327, 5651692],
+	"globalRegion": "Maine",
+	"intro": "Rising sea levels will impact Maine’s coast in many different ways.  One important effect will be the inundation of roads, which will prevent access to homes and businesses as roads are flooded.  Use this tool to explore how rising sea levels will affect roads in coastal cities and towns, see where road networks will be inaccessible to emergency responders, and how that relates to the overall social vulnerability of the community. Social vulnerability is provided for each coastal block group, based upon 17 socioeconomic and demographic factors.",
+	"printFooterTitle": "Coastal Resilience - Maine Coastal Risk Mapping Tool",
+	"printFooterBody:": "Tidal Marsh Data: Maine Natural Areas Program (MNAP) - SLR Projections: Maine Geological Survey, MNAP - Application Development: The Nature Conservancy",
+        "lidar": "https://gis.maine.gov/arcgis/rest/services/Elevation/Maine_Elevation_DEM_2_Meter_Image_Service/ImageServer",
+	"lidarLayers": ["medem2_hill","medem2_overview10_hill","medem2_overview30_hill","medem2_overview100_hill"],
+	"service": "https://services2.coastalresilience.org/arcgis/rest/services/Maine/Coastal_Risk_Explorer/MapServer",
+	"roadStreamCrossing_ServiceIndex": 0,
+        "roads_ServiceIndex" : 19,
+        "coastalRisk_ServiceIndex" : 16,
+	"townsHoverLayer_ServiceIndex": 20,	
+	"townsLayer_ServiceIndex": 26,
+	"townsLayer_NameField": "TOWN",
+	"blockGroupLayer_ServiceIndex":28,
+	"blockGroupLayer_NameField":"NAMELSAD",
+	"townTopOptionText":"-Select Town-",
+	"visibleLayerGroupsBottom":[26,27,28],
+	"visibleLayerGroupsTop":{
+		"default":[1,2,20,27],
+		"oneFoot":[1,2,4,5,6,20,27],
+		"twoFoot":[1,2,8,9,10,20,27],
+		"threeFoot":[1,2,12,13,14,20,27],
+		"sixFoot":[1,2,16,17,18,20,27]
+	},	
+	"criticalFields":{
+		"common":{
+			"socialVulnerabilityRank": "RPL_THEMES",
+			"socioeconomic": ["EP_POV","EP_UNEMP","EP_NATEMPL","EP_SLFEMP","E_PCI","EP_NOHSDP"],
+			"householdComp":["EP_AGE65","EP_AGE65AL","EP_AGE18","EP_DISABL","EP_SNGPNT"],
+			"minotiry":["EP_MINRTY","EP_LIMENG"],
+			"housing":["EP_MUNIT","EP_MOBILE","EP_CROWD","EP_NOVEH"]
+		},
+		"towns": {
+			"costToRoad": {
+				"oneFoot":"COST_1FT",
+				"twoFoot":"COST_2FT",
+				"threeFoot":"COST_1M",
+				"sixFoot":"COST_6FT"
+			},
+			"numAddressesInaccessible": {
+				"oneFoot":"ADDR_1FT",
+				"twoFoot":"ADDR_2FT",
+				"threeFoot":"ADDR_1M",
+				"sixFoot":"ADDR_6FT"
+			}
+		},
+		"blockGroups": {
+			"costToRoad": {
+				"oneFoot":"COST_1FT_BG",
+				"twoFoot":"COST_2FT_BG",
+				"threeFoot":"COST_1M_BG",
+				"sixFoot":"COST_6FT_BG"
+			},
+			"numAddressesInaccessible": {
+				"oneFoot":"ADDR_1FT_BG",
+				"twoFoot":"ADDR_2FT_BG",
+				"threeFoot":"ADDR_1M_BG",
+				"sixFoot":"ADDR_6FT_BG"
+			}
+		}
+	},
+	"scenariosAdditive": true,
+	"scenarios": [
+		{
+			"layer": 21,
+			"label": "Current"
+		},
+		{
+			"layer": 22,
+			"label": "1 ft"
+		},
+		{
+			"layer": 23,
+			"label": "2 ft"
+		},
+		{
+			"layer": 24,
+			"label": "3.3 ft"
+		},
+		{
+			"layer": 25,
+			"label": "6 ft"
+		}
+	],
+	"printInfo":
+	{
+		"items":[
+			{
+				"label":"Approximate Cost to Upgrade<br>Inundated Roads",
+				"units": "$",
+				"unitsBeforeValue": true,
+				"icon": "spacer"
+			},
+			{
+				"label":"Number of Addresses Inaccessible<br>to Emergency Services",
+				"units": "",
+				"unitsBeforeValue": false,
+				"icon": "spacer"
+			},
+			{
+				"label":"Social Vulnerability<br>Ranking Measure",
+				"units": "%",
+				"unitsBeforeValue": false,
+				"icon": "spacer"
+			}
+		]
+	},
+	"report":{
+		"items":[
+            		{
+				"type": "single",
+				"icon": "grass",
+				"label": "Number of Addresses Inaccessible to Emergency Services",
+				"units": "",
+				"unitsBeforeValue": false,
+				"elId": "numAddy",
+				"tooltip": "These represent inaccessible addresses to emergency responders due to road inundation based on E911 address data."
+			},
+			{
+				"type": "single",
+				"icon": "grass",
+				"label": "Approximate Cost to Upgrade Inundated Roads",
+				"units": "$",
+				"unitsBeforeValue": true,
+				"elId": "costToRoad",
+				"tooltip": "This measure is a general estimate, intended to generate discussion rather than provide actual costs. Many factors contribute to road upgrade costs, and site-specific conditions must be considered for  a more precise value."
+			},
+			{
+				"type":"multiple",
+				"icon": "grass",
+				"label": "Social Vulnerability Ranking Measures",
+				"units": "%",
+				"tooltip": "--",
+				"categories": [
+					{
+						"position": "left",
+						"label": "Socioeconomic Status",
+						"icon":"grass",
+						"metrics": [
+							{
+								"label":"Below Poverty",
+								"field":"EP_POV",
+								"unitsBeforeValue": false,
+								"units":"%"
+							},
+							{
+								"label":"Unemployed",
+								"field":"EP_UNEMP",
+								"unitsBeforeValue": false,
+								"units":"%"
+							},
+							{
+								"label":"Natural Resource occupation",
+								"field":"EP_NATEMPL",
+								"unitsBeforeValue": false,
+								"units":"%"
+							},
+							{
+								"label":"Self-employed",
+								"field":"EP_SLFEMP",
+								"unitsBeforeValue": false,
+								"units":"%"
+							},
+							{
+								"label":"No High School Diploma",
+								"field":"EP_NOHSDP",
+								"unitsBeforeValue": false,
+								"units":"%"
+							},
+							{
+								"label":"Per Capita Income",
+								"field":"E_PCI",
+								"unitsBeforeValue": true,
+								"units":"$"
+							}
+						]
+					},
+					{
+						"position": "right",
+						"label": "Household Composition & Disability",
+						"icon":"grass",
+						"metrics": [
+							{
+								"label":"Aged 65+",
+								"field":"EP_AGE65",
+								"unitsBeforeValue": false,
+								"units":"%"
+							},
+							{
+								"label":"Aged 65+ and Living Alone",
+								"field":"EP_AGE65AL",
+								"unitsBeforeValue": false,
+								"units":"%"
+							},
+							{
+								"label":"Aged 18 or younger",
+								"field":"EP_AGE18",
+								"unitsBeforeValue": false,
+								"units":"%"
+							},
+							{
+								"label":"Civilian with a Disability",
+								"field":"EP_DISABL",
+								"unitsBeforeValue": false,
+								"units":"%"
+							},
+							{
+								"label":"Single Parent Household",
+								"field":"EP_SNGPNT",
+								"unitsBeforeValue": false,
+								"units":"%"
+							}
+						]
+					},
+					{
+						"position": "left",
+						"label": "Minority Status",
+						"icon":"grass",
+						"metrics": [
+							{
+								"label":"Minority",
+								"field":"EP_MINRTY",
+								"unitsBeforeValue": false,
+								"units":"%"
+							},
+							{
+								"label":"Speak English 'Less than Well'",
+								"field":"EP_LIMENG",
+								"unitsBeforeValue": false,
+								"units":"%"
+							}
+						]
+					},
+					{
+						"position": "right",
+						"label": "Housing & Transportation",
+						"icon":"grass",
+						"metrics": [
+							{
+								"label":"Multi-unit Structures",
+								"field":"EP_MUNIT",
+								"unitsBeforeValue": false,
+								"units":"%"
+							},
+							{
+								"label":"Mobile Homes",
+								"field":"EP_MOBILE",
+								"unitsBeforeValue": false,
+								"units":"%"
+							},
+							{
+								"label":"Crowding",
+								"field":"EP_CROWD",
+								"unitsBeforeValue": false,
+								"units":"%"
+							},
+							{
+								"label":"No Vehicle",
+								"field":"EP_NOVEH",
+								"unitsBeforeValue": false,
+								"units":"%"
+							}
+						]
+					}
+				]
+			}
+		]
+	},
+	"stats": [
+		{
+			"type":"multiple",
+			"icon": "grass",
+			"label": "Social Vulnerability Index Measures",
+			"units": "",
+			"fields": [
+				"Current_Tidal_Marsh_Acres",
+				"CurrentPlus1Ft_Acres",
+				"CurrentPlus2Ft_Acres",
+				"CurrentPlus3Ft_Acres",
+				"CurrentPlus6Ft_Acres"
+			],
+			"tooltip": ""
+		},
+		{
+			"icon": "grass",
+			"label": "Cost of Road Inundated",
+			"units": "M",
+			"fields": [
+				"Current_Tidal_Marsh_Acres",
+				"CurrentPlus1Ft_Acres",
+				"CurrentPlus2Ft_Acres",
+				"CurrentPlus3Ft_Acres",
+				"CurrentPlus6Ft_Acres"
+			],
+			"tooltip": ""
+		}
+	]	
+}
+
