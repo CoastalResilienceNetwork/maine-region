@@ -3,6 +3,10 @@
 	{
 		"repo": "future_habitat_v2",
 		"name": "future-habitat-v2"
+    },
+	{
+		"repo": "marine-risk-explorer",
+		"name": "marine-risk-explorer"
 	},
 	{
 		"repo": "barrier-prioritization-v3",
