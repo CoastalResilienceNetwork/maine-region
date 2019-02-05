@@ -40,6 +40,7 @@
     "pluginOrder": [
         "future-habitat-v2",
 		"barrier-prioritization-v3",
+        "marine-risk-explorer",
         "zoom_to",
         "measure",
         "legend_display",
